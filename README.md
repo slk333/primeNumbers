@@ -1,4 +1,5 @@
 # primeNumbers
+efficient prime number generator
 
 ```swift
 let limit = 1000
