@@ -1,4 +1,4 @@
-let limit = 1000
+let limit = 10000
 
 var primeCheckArray = Array.init(repeating: true,count:limit)
 // a number only get unprime if he is a multiple of an integer greater than 1 and not itself

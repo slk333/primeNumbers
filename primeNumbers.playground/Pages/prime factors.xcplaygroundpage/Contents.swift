@@ -1,7 +1,7 @@
-
 import Foundation
 
-var n = 123_456_789_123_456
+// 9_973 * 10_007
+var n = 99_799_811
 
 var sqrtN = Int(sqrt(Double(n)))
 print("the first prime divisor cannot be higher than \(sqrtN)")

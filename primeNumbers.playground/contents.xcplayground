@@ -3,5 +3,6 @@
     <pages>
         <page name='prime factors'/>
         <page name='compute primes'/>
+        <page name='greatest common divisor'/>
     </pages>
 </playground>
