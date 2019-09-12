@@ -1,7 +1,7 @@
 import Foundation
 
-let firstNumber = 4096
-let secondNumber = 2049
+let firstNumber = 15648
+let secondNumber = 7584
 
 var a = firstNumber
 var b = secondNumber
