@@ -3,24 +3,22 @@ import Foundation
  What is the chance of losing x times in a row
  */
 
-let chance = 0.45
-let rolls = 13
+let pLose = 0.51
+let rolls = 15
 
-0.45 + (1-0.45) * 0.45
+var p = 1.0
 
-var a = 0.45
-var b = 1 - a
-
-for _ in 1..<rolls{
-    a = a + b * 0.45
-    b = 1 - a
+for _ in 0..<rolls{
+    p *= pLose
 }
-a
 
+
+let inverse = Int(1.0/p)
 let numberFormatter = NumberFormatter()
-numberFormatter.maximumFractionDigits = 2
-let result = NSNumber(value:b * 100)
+numberFormatter.maximumFractionDigits = 5
+let result = NSNumber(value:p * 100.0)
 let string = numberFormatter.string(from: result)!
 
-print("chance de gagner par roll: \(chance)")
+print("chance de perdre par roll: \(pLose)")
 print("La chance de rater \(rolls) rolls de suite s'élève à \(string) %")
+print("it will happen once every \(inverse) rolls")
